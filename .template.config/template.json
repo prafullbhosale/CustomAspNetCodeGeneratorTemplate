@@ -1,0 +1,50 @@
+{
+    "author": "Prafull Bhosale",
+    "classifications": ["Code-Generator", "Web"],
+    "name": "Custom Code Generator for ASP.NET Core",
+    "identity": "ASPNETCORE.CustomCodeGenerator",
+    "shortName": "codegenerator",
+    "tags" : {
+        "language": "C#"
+    },
+    "sourceName": "CustomAspNetCodeGeneratorTemplate",
+    "preferNameDirectory": "true",
+    "symbols": {
+        "alias": {
+            "type": "parameter",
+            "replaces": "customalias",
+            "isRequired": "true"
+        },
+        "targetAppFramework": {
+            "type":"parameter",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "1.0",
+                    "description": "Make the scaffolder work with projects that use ASP.NET Core 1.0"
+                },
+                {
+                    "choice": "1.1",
+                    "description": "Make the scaffolder work with projects that use ASP.NET Core 1.1"
+                },
+                {
+                    "choice": "2.0",
+                    "description": "Make the scaffolder work with projects that use ASP.NET Core 2.0"
+                }
+            ],
+            "default": "1.0",
+            "isRequired":"true"
+        }
+    }, 
+    
+    "sources":[
+        {
+            "source":"./TemplateContent/",
+            "modifiers": [
+                {
+                    "exclude": "**/.gitignore"
+                }
+            ]
+        }
+    ]
+}
