@@ -12,7 +12,7 @@
     <file src="TemplateContent\CommandLineModel.cs" target="TemplateContent\CommandLineModel.cs" />
     <file src="TemplateContent\CustomAspNetCodeGenerator.cs" target="TemplateContent\CustomAspNetCodeGenerator.cs" />
     <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate.csproj" target="TemplateContent\CustomAspNetCodeGeneratorTemplate.csproj" />
-    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplateModel.cs" target="TemplateContent\CustomAspNetCodeGeneratorTemplateModel.cs" />
+    <file src="TemplateContent\CustomTemplateModel.cs" target="TemplateContent\CustomTemplateModel.cs" />
     <file src="TemplateContent\readme.md" target="TemplateContent\readme.md" />
     <file src="TemplateContent\Templates\Views\View.cshtml" target="TemplateContent\Templates\Views\View.cshtml" />
     <file src=".template.config\template.json" target=".template.config\template.json" />

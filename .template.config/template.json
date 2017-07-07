@@ -36,15 +36,9 @@
             "isRequired":"true"
         }
     }, 
-    
     "sources":[
         {
-            "source":"./TemplateContent/",
-            "modifiers": [
-                {
-                    "exclude": "**/.gitignore"
-                }
-            ]
+            "source":"TemplateContent"
         }
     ]
 }

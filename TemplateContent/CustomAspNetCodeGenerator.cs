@@ -60,7 +60,7 @@ namespace CustomAspNetCodeGeneratorTemplate
                 throw new ArgumentException("Please specify the name of file to be generated using the --name option");
             }
 
-            var templateModel = new CustomAspNetCodeGeneratorTemplateModel()
+            var templateModel = new CustomTemplateModel()
             {
                 ScaffolderName = this.scaffolderName
             };

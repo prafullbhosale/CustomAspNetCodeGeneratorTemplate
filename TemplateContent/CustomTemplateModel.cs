@@ -1,6 +1,6 @@
 namespace CustomAspNetCodeGeneratorTemplate
 {
-    public class CustomAspNetCodeGeneratorTemplateModel
+    public class CustomTemplateModel
     {
         public string ScaffolderName { get;set; }
     }
