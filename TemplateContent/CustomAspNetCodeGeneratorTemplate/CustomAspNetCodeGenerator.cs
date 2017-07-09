@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Threading.Tasks;
+#if (targetAppFramework != "2.0")
 using Microsoft.Extensions.ProjectModel;
+#endif
 using Microsoft.VisualStudio.Web.CodeGeneration;
 using Microsoft.VisualStudio.Web.CodeGeneration.CommandLine;
+#if (targetAppFramework == "2.0")
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.ProjectModel;
+#endif
 using Microsoft.VisualStudio.Web.CodeGeneration.DotNet;
 
 namespace CustomAspNetCodeGeneratorTemplate

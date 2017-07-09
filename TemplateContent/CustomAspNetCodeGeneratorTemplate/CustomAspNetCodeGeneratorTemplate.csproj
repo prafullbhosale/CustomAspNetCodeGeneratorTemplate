@@ -16,6 +16,7 @@
   <ItemGroup>
   <!--#if (targetAppFramework == "1.0") -->
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.0.3" />
   <!--#elseif (targetAppFramework =="1.1") 
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="1.1.1" />
     #elseif (targetAppFramework == "2.0")
