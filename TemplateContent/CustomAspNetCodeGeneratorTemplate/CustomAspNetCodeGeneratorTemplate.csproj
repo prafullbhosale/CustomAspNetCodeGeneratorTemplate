@@ -24,6 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Templates\Views" Pack="true" PackagePath="Templates\Views" />
+    <None Include="Templates\Views\*" Pack="true" PackagePath="Templates\Views" />
   </ItemGroup>
 </Project>

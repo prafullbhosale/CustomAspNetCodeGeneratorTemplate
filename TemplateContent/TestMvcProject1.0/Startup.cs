@@ -40,7 +40,6 @@ namespace TestMvcProject1._0
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
             }
             else
             {
