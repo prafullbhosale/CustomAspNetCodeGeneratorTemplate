@@ -2,19 +2,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>CustomAspNetCodeGeneratorTemplate</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>Prafull Bhosale</authors>
     <owners>Prafull Bhosale</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Provides a template for creating custom code generators to use with ASP.NET Core scaffolding.</description>
   </metadata>
   <files>
-    <file src="TemplateContent\CommandLineModel.cs" target="TemplateContent\CommandLineModel.cs" />
-    <file src="TemplateContent\CustomAspNetCodeGenerator.cs" target="TemplateContent\CustomAspNetCodeGenerator.cs" />
-    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate.csproj" target="TemplateContent\CustomAspNetCodeGeneratorTemplate.csproj" />
-    <file src="TemplateContent\CustomTemplateModel.cs" target="TemplateContent\CustomTemplateModel.cs" />
-    <file src="TemplateContent\readme.md" target="TemplateContent\readme.md" />
-    <file src="TemplateContent\Templates\Views\View.cshtml" target="TemplateContent\Templates\Views\View.cshtml" />
-    <file src=".template.config\template.json" target=".template.config\template.json" />
+    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CommandLineModel.cs"
+          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CommandLineModel.cs" />
+    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGenerator.cs" 
+          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGenerator.cs" />
+    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGeneratorTemplate.csproj" 
+          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGeneratorTemplate.csproj" />
+    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomTemplateModel.cs" 
+          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomTemplateModel.cs" />
+    <file src="TemplateContent\readme.md" 
+          target="TemplateContent\readme.md" />
+    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\Templates\Views\View.cshtml" 
+          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\Templates\Views\View.cshtml" />
+    <file src=".template.config\template.json" 
+          target="TemplateContent\.template.config\template.json" />
   </files>
 </package>

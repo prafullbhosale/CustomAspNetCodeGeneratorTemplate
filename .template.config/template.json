@@ -35,10 +35,5 @@
             "default": "1.0",
             "isRequired":"true"
         }
-    }, 
-    "sources":[
-        {
-            "source":"TemplateContent"
-        }
-    ]
+    }
 }
