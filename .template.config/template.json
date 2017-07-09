@@ -1,4 +1,5 @@
 {
+    "$schema": "http://json.schemastore.org/template",
     "author": "Prafull Bhosale",
     "classifications": ["Code-Generator", "Web"],
     "name": "Custom Code Generator for ASP.NET Core",
@@ -8,7 +9,7 @@
         "language": "C#"
     },
     "sourceName": "CustomAspNetCodeGeneratorTemplate",
-    "preferNameDirectory": "true",
+    "preferNameDirectory": true,
     "symbols": {
         "alias": {
             "type": "parameter",
@@ -35,5 +36,32 @@
             "default": "1.0",
             "isRequired":"true"
         }
-    }
+    },
+    "sources": [
+        {
+            "modifiers":[
+                {
+                    "condition": "(targetAppFramework == \"1.0\")",
+                    "exclude": [
+                        "TestMvcProject/**",
+                        "TestMvcProject1.1/**"
+                    ]
+                },
+                {
+                    "condition": "(targetAppFramework == \"1.1\")",
+                    "exclude": [
+                        "TestMvcProject/**",
+                        "TestMvcProject1.0/**"
+                    ]
+                },
+                {
+                    "condition": "(targetAppFramework == \"2.0\")",
+                    "exclude": [ 
+                        "TestMvcProject1.0/**",
+                        "TestMvcProject1.1/**"
+                    ]
+                }
+            ]
+        }
+    ]
 }
