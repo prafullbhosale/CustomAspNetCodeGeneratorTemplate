@@ -44,14 +44,16 @@
                     "condition": "(targetAppFramework == \"1.0\")",
                     "exclude": [
                         "TestMvcProject/**",
-                        "TestMvcProject1.1/**"
+                        "TestMvcProject1.1/**",
+                        "CustomAspNetCodeGeneratorTemplate/ParameterDefinition/**"
                     ]
                 },
                 {
                     "condition": "(targetAppFramework == \"1.1\")",
                     "exclude": [
                         "TestMvcProject/**",
-                        "TestMvcProject1.0/**"
+                        "TestMvcProject1.0/**",
+                        "CustomAspNetCodeGeneratorTemplate/ParameterDefinition/**"
                     ]
                 },
                 {
@@ -61,6 +63,35 @@
                         "TestMvcProject1.1/**"
                     ]
                 }
+            ]
+        }
+    ],
+    "primaryOutputs": [
+        {
+            "path": "CustomAspNetCodeGeneratorTemplate/CustomAspNetCodeGeneratorTemplate.csproj"
+        },
+        {
+            "path": "TestMvcProject/TestMvcProject.csproj",
+            "condition": "(targetAppFramework == \"2.0\")"
+        },
+        {
+            "path": "TestMvcProject1.0/TestMvcProject1.0.csproj",
+            "condition": "(targetAppFramework == \"1.0\")"
+        },
+        {
+            "path": "TestMvcProject1.1/TestMvcProject1.1.csproj",
+            "condition": "(targetAppFramework == \"1.1\")"
+        }
+    ],
+    "postActions": [
+        {
+            "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+            "args": {
+                "primaryOutputIndexes": "0;1"
+            },
+            "continueOnError": false,
+            "manualInstructions": [
+                { "text":"Add projects to solution."}
             ]
         }
     ]

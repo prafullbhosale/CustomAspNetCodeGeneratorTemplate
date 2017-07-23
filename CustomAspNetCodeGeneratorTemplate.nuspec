@@ -9,18 +9,6 @@
     <description>Provides a template for creating custom code generators to use with ASP.NET Core scaffolding.</description>
   </metadata>
   <files>
-    <!--<file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CommandLineModel.cs"
-          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CommandLineModel.cs" />
-    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGenerator.cs" 
-          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGenerator.cs" />
-    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGeneratorTemplate.csproj" 
-          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomAspNetCodeGeneratorTemplate.csproj" />
-    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomTemplateModel.cs" 
-          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\CustomTemplateModel.cs" />
-    <file src="TemplateContent\readme.md" 
-          target="TemplateContent\readme.md" />
-    <file src="TemplateContent\CustomAspNetCodeGeneratorTemplate\Templates\Views\View.cshtml" 
-          target="TemplateContent\CustomAspNetCodeGeneratorTemplate\Templates\Views\View.cshtml" />-->
     <file src="TemplateContent\" target="TemplateContent\" />
     <file src=".template.config\template.json" 
           target="TemplateContent\.template.config\template.json" />

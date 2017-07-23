@@ -13,6 +13,16 @@
     <AssetTargetFallback>$(PackageTargetFallback);portable-net45+win8</AssetTargetFallback>
   </PropertyGroup>
 #endif-->
+  <PropertyGroup Condition="$(PacakgeVersion) == ''">
+    <!--
+      Create second-based build number for local builds.
+      635556672000000000 is Jan 1, 2015.
+    -->
+    <_SecondBasedTimeStamp>$([System.DateTime]::UtcNow.Subtract($([System.DateTime]::FromBinary(635556672000000000))).TotalSeconds.ToString("F0"))</_SecondBasedTimeStamp>
+    <_SecondBasedTimeStamp>t$([System.Int64]::Parse($(_SecondBasedTimeStamp)).ToString("x9"))</_SecondBasedTimeStamp>
+    <BuildNumber>$(_SecondBasedTimeStamp)</BuildNumber>
+    <PackageVersion>1.0.0-$(BuildNumber)</PackageVersion>
+  </PropertyGroup>
   <ItemGroup>
   <!--#if (targetAppFramework == "1.0") -->
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="1.0.1" />
@@ -26,5 +36,8 @@
 
   <ItemGroup>
     <None Include="Templates\Views\*" Pack="true" PackagePath="Templates\Views" />
+    <!--#if (targetAppFramework == "2.0")
+    <None Include="ParameterDefinitions\*" Pack="true" PackagePath="Generators\ParameterDefinitions\" /> 
+    #endif-->
   </ItemGroup>
 </Project>

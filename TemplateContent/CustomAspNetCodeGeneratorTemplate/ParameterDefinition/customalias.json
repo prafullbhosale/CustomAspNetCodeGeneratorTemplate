@@ -1,0 +1,22 @@
+{
+    "Alias": "customalias",
+    "Description": "Generates a new customalias",
+    "Arguments": [ ],
+    "Options": [ 
+        {
+            "Name": "viewName",
+            "ShortName": "n",
+            "Description": "Name of the file to be generated"
+        },
+        {
+            "Name": "relativeFolderPath",
+            "ShortName": "outDir",
+            "Description":""
+        },
+        {
+            "Name": "force",
+            "ShortName": "f",
+            "Description": "Specify this option to overwrite existing files. "
+        }
+    ]
+}

@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0-preview2-final" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" PrivateAssets="All" Version="2.0.0-preview3-26096" />
-    <PackageReference Include="CustomAspNetCodeGeneratorTemplate" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="CustomAspNetCodeGeneratorTemplate" Version="1.0.0-*" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>

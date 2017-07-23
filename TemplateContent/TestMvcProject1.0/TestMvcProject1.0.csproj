@@ -12,7 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.0.3" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.0.1" PrivateAssets="All" />
-    <PackageReference Include="CustomAspNetCodeGeneratorTemplate" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="CustomAspNetCodeGeneratorTemplate" Version="1.0.0-*" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
